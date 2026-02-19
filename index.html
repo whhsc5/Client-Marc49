@@ -52,12 +52,12 @@
 
     <main class="pt-16">
         <!-- 1. Hero Section -->
-        <section class="relative min-h-[60vh] flex flex-col items-center justify-center px-6 hero-gradient overflow-hidden border-b border-gray-50">
-            <div class="max-w-4xl w-full text-center space-y-4 py-12 md:py-16">
+        <section class="relative min-h-[60vh] flex flex-col items-center justify-center px-6 hero-gradient overflow-hidden border-b border-gray-50 text-center">
+            <div class="max-w-4xl w-full space-y-4 py-12 md:py-16">
                 <h1 class="text-5xl md:text-8xl font-black tracking-tighter leading-[0.9]">
                     Export Growth,<br>Fully Executed.
                 </h1>
-                <p class="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto font-light leading-relaxed">
+                <p class="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto font-light leading-relaxed px-4">
                     The growth partner for CPG brands expanding across LATAM and the Caribbean. We drive real in-market performance, not just shipments.
                 </p>
                 <div class="pt-6">
@@ -78,17 +78,17 @@
                 <h2 class="text-3xl md:text-5xl font-black tracking-tight mb-2">Roger Artinoff</h2>
                 <p class="text-caribtealt font-bold uppercase tracking-widest text-xs mb-6">CEO & Founder, MARC49</p>
                 <div class="max-w-2xl mx-auto space-y-6">
-                    <p class="text-gray-600 leading-relaxed text-base md:text-lg font-medium">
+                    <p class="text-gray-600 leading-relaxed text-base md:text-lg font-medium px-4">
                         Roger is a 20-year CPG executive with a track record of driving profitable growth across North America, LATAM and Asia in multi-category portfolios. 
                     </p>
-                    <p class="text-gray-500 leading-relaxed text-sm md:text-base">
+                    <p class="text-gray-500 leading-relaxed text-sm md:text-base px-4">
                         A former P&L owner for business units exceeding $100M+, he specializes in go-to-market transformation and high-performing team integration for giants like Reckitt and SC Johnson.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- 3. Key Stats Section (REFINED) -->
+        <!-- 3. Key Stats Section -->
         <section class="max-w-5xl mx-auto px-6 py-12 border-y border-gray-100">
             <div class="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-4 text-center">
                 <div class="flex-1 w-full">
@@ -120,37 +120,49 @@
                 <p class="text-gray-500 max-w-xl mx-auto text-sm md:text-base font-medium">Precision execution models for premium CPG brands.</p>
             </div>
 
-            <!-- Solution Cards with Local Assets -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-12" id="engagement-selector">
-                <div class="engagement-card cursor-pointer bg-white p-8 md:p-10 rounded-[2.5rem] border border-gray-100 shadow-sm hover:border-caribtealt hover:shadow-2xl transition-all relative group overflow-hidden" data-model="First-Time Entry">
-                    <img src="assets/strategy.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-5 transition-opacity duration-700">
-                    <div class="absolute top-6 right-6 check-icon opacity-0 scale-50 transition-all duration-300">
-                        <svg class="w-6 h-6 text-caribtealt" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            <!-- Solution Cards - NOW WITH PROMINENT IMAGES -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16" id="engagement-selector">
+                <!-- Card 1 -->
+                <div class="engagement-card cursor-pointer bg-white rounded-[2.5rem] border border-gray-100 shadow-sm hover:border-caribtealt hover:shadow-2xl transition-all relative group overflow-hidden" data-model="First-Time Entry">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/strategy.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-caribtealt/10 group-hover:bg-transparent transition-colors"></div>
                     </div>
-                    <div class="relative z-10">
-                        <h4 class="font-black text-xl mb-4 tracking-tight">First-Time Entry</h4>
+                    <div class="p-8">
+                        <div class="absolute top-44 right-8 check-icon opacity-0 scale-50 transition-all duration-300 z-20">
+                            <svg class="w-8 h-8 text-caribtealt bg-white rounded-full p-1 shadow-lg" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h4 class="font-black text-xl mb-3 tracking-tight">First-Time Entry</h4>
                         <p class="text-sm text-gray-500 leading-relaxed font-medium">End-to-end strategy, regulatory setup, and commercial launch management across the region.</p>
                     </div>
                 </div>
 
-                <div class="engagement-card cursor-pointer bg-white p-8 md:p-10 rounded-[2.5rem] border border-gray-100 shadow-sm hover:border-caribtealt hover:shadow-2xl transition-all relative group overflow-hidden" data-model="Network Optimization">
-                    <img src="assets/retail.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-5 transition-opacity duration-700">
-                    <div class="absolute top-6 right-6 check-icon opacity-0 scale-50 transition-all duration-300">
-                        <svg class="w-6 h-6 text-caribtealt" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                <!-- Card 2 -->
+                <div class="engagement-card cursor-pointer bg-white rounded-[2.5rem] border border-gray-100 shadow-sm hover:border-caribtealt hover:shadow-2xl transition-all relative group overflow-hidden" data-model="Network Optimization">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/retail.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-caribtealt/10 group-hover:bg-transparent transition-colors"></div>
                     </div>
-                    <div class="relative z-10">
-                        <h4 class="font-black text-xl mb-4 tracking-tight">Distributor Optimization</h4>
+                    <div class="p-8">
+                        <div class="absolute top-44 right-8 check-icon opacity-0 scale-50 transition-all duration-300 z-20">
+                            <svg class="w-8 h-8 text-caribtealt bg-white rounded-full p-1 shadow-lg" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h4 class="font-black text-xl mb-3 tracking-tight">Distributor Optimization</h4>
                         <p class="text-sm text-gray-500 leading-relaxed font-medium">Fixing fragmented networks and aligning local partners with global brand performance standards.</p>
                     </div>
                 </div>
 
-                <div class="engagement-card cursor-pointer bg-white p-8 md:p-10 rounded-[2.5rem] border border-gray-100 shadow-sm hover:border-caribtealt hover:shadow-2xl transition-all relative group overflow-hidden" data-model="Full Outsourcing">
-                    <img src="assets/consumers.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-5 transition-opacity duration-700">
-                    <div class="absolute top-6 right-6 check-icon opacity-0 scale-50 transition-all duration-300">
-                        <svg class="w-6 h-6 text-caribtealt" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                <!-- Card 3 -->
+                <div class="engagement-card cursor-pointer bg-white rounded-[2.5rem] border border-gray-100 shadow-sm hover:border-caribtealt hover:shadow-2xl transition-all relative group overflow-hidden" data-model="Full Outsourcing">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/consumers.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-caribtealt/10 group-hover:bg-transparent transition-colors"></div>
                     </div>
-                    <div class="relative z-10">
-                        <h4 class="font-black text-xl mb-4 tracking-tight">Full Management</h4>
+                    <div class="p-8">
+                        <div class="absolute top-44 right-8 check-icon opacity-0 scale-50 transition-all duration-300 z-20">
+                            <svg class="w-8 h-8 text-caribtealt bg-white rounded-full p-1 shadow-lg" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h4 class="font-black text-xl mb-3 tracking-tight">Full Management</h4>
                         <p class="text-sm text-gray-500 leading-relaxed font-medium">Acting as your regional export department—full accountability from compliance to sell-out.</p>
                     </div>
                 </div>
