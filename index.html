@@ -161,6 +161,7 @@
                 <h3 id="form-headline" class="text-2xl md:text-3xl font-black tracking-tight mb-8 text-center uppercase tracking-tighter">Initiate Growth Plan</h3>
                 <form id="growth-form" class="space-y-4 md:space-y-6">
                     <input type="hidden" id="selected-objective" name="objective" value="">
+                    <input type="hidden" id="form-subject" name="_subject" value="New MARC49 Growth Request">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                         <input type="text" required name="name" placeholder="Full Name" class="w-full bg-offwhite border border-gray-100 px-6 py-4 rounded-2xl focus:border-caribtealt transition-all font-medium">
                         <input type="email" required name="email" placeholder="Work Email" class="w-full bg-offwhite border border-gray-100 px-6 py-4 rounded-2xl focus:border-caribtealt transition-all font-medium">
@@ -206,6 +207,7 @@
             const formContainer = document.getElementById('form-container');
             const formHeadline = document.getElementById('form-headline');
             const selectedObjectiveField = document.getElementById('selected-objective');
+            const formSubjectField = document.getElementById('form-subject');
             const growthForm = document.getElementById('growth-form');
             const submitBtn = document.getElementById('submit-btn');
             const btnText = document.getElementById('btn-text');
@@ -222,6 +224,7 @@
                     card.querySelector('.check-icon').classList.remove('opacity-0', 'scale-50');
                     const model = card.dataset.model;
                     selectedObjectiveField.value = model;
+                    formSubjectField.value = `MARC49 Lead: ${model}`;
                     formHeadline.innerText = `${model}`;
                     formContainer.classList.remove('hidden', 'opacity-0', 'translate-y-8');
                     setTimeout(() => formContainer.classList.add('flex', 'flex-col', 'opacity-100', 'translate-y-0'), 10);
