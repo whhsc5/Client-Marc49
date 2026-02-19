@@ -45,7 +45,7 @@
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <a href="#experience" class="hover:text-caribtealt transition-colors">CEO</a>
                 <a href="#solutions" class="hover:text-caribtealt transition-colors">Solutions</a>
-                <a href="#solutions" class="bg-caribtealt text-white px-5 py-2 rounded-full hover:bg-opacity-90 transition-all">Start Growth</a>
+                <button onclick="openForm('General Inquiry')" class="bg-caribtealt text-white px-5 py-2 rounded-full hover:bg-opacity-90 transition-all hover:scale-105 active:scale-95">Start Growth</button>
             </div>
         </nav>
     </header>
@@ -72,14 +72,14 @@
         </section>
 
         <!-- 2. CEO Section -->
-        <section id="experience" class="max-w-5xl mx-auto px-6 py-12 md:py-16 text-center">
+        <section id="experience" class="max-w-5xl mx-auto px-6 py-12 md:py-16 text-center border-b border-gray-50">
             <div class="mb-10">
                 <img src="assets/Roger.png" alt="Roger Artinoff" class="w-48 h-48 md:w-64 md:h-64 rounded-[2.5rem] object-cover border-8 border-white shadow-2xl mx-auto mb-8 transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-500">
                 <h2 class="text-3xl md:text-5xl font-black tracking-tight mb-2">Roger Artinoff</h2>
                 <p class="text-caribtealt font-bold uppercase tracking-widest text-xs mb-6">CEO & Founder, MARC49</p>
                 <div class="max-w-3xl mx-auto space-y-6 text-gray-600 leading-relaxed text-base md:text-lg">
                     <p class="font-medium">
-                        Roger is a 20-year CPG executive with a track record of driving profitable growth across North America, LATAM and Asia in multi-category portfolios. 
+                        Roger is a 20-year CPG executive with a track record of driving profitable growth across North America, LATAM and Asia. 
                     </p>
                     <p class="text-gray-500 text-sm md:text-base">
                         A former P&L owner for business units exceeding $100M+, he specializes in go-to-market transformation and high-performing team integration for giants like Reckitt and SC Johnson.
@@ -88,8 +88,8 @@
             </div>
         </section>
 
-        <!-- 3. Key Stats Section (Refined) -->
-        <section class="max-w-5xl mx-auto px-6 py-10 border-y border-gray-100">
+        <!-- 3. Key Stats Section -->
+        <section class="max-w-5xl mx-auto px-6 py-10 border-b border-gray-100">
             <div class="flex flex-wrap justify-center md:justify-between items-center gap-y-8 gap-x-4 text-center">
                 <div class="w-[45%] md:flex-1">
                     <span class="block text-3xl md:text-4xl font-black text-caribtealt tracking-tighter">650M+</span>
@@ -113,76 +113,91 @@
             </div>
         </section>
 
-        <!-- 4. Strategic Solutions & Form -->
-        <section id="solutions" class="max-w-6xl mx-auto px-6 py-16">
+        <!-- 4. Strategic Solutions -->
+        <section id="solutions" class="max-w-6xl mx-auto px-6 py-16 md:py-24">
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-5xl font-black tracking-tight mb-4">Strategic Solutions</h2>
                 <p class="text-gray-500 max-w-xl mx-auto text-sm md:text-base font-medium">Precision execution models for premium CPG brands.</p>
             </div>
 
-            <!-- Solution Cards with HIGH-IMPACT Images -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16" id="engagement-selector">
+            <!-- Solution Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20" id="engagement-selector">
                 <!-- Card 1 -->
-                <div class="engagement-card cursor-pointer bg-white rounded-[2rem] border border-gray-100 shadow-sm hover:border-caribtealt hover:shadow-2xl transition-all relative group overflow-hidden" data-model="First-Time Entry">
+                <div onclick="openForm('First-Time Entry')" class="engagement-card cursor-pointer bg-white rounded-[2.5rem] border border-gray-100 shadow-sm hover:border-caribtealt hover:shadow-2xl transition-all relative group overflow-hidden" data-model="First-Time Entry">
                     <div class="h-56 overflow-hidden relative">
                         <img src="assets/strategy.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-                        <div class="absolute bottom-4 left-6 text-white">
-                            <span class="text-[10px] font-black uppercase tracking-widest opacity-80">Phase I</span>
-                            <h4 class="font-black text-xl tracking-tight">Market Entry</h4>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-70"></div>
+                        <div class="absolute bottom-6 left-8 text-white">
+                            <span class="text-[10px] font-black uppercase tracking-[0.2em] text-caribtealt mb-1 block">Entry</span>
+                            <h4 class="font-black text-2xl tracking-tight leading-none">Market Launch</h4>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <p class="text-sm text-gray-500 leading-relaxed font-medium">End-to-end strategy, regulatory setup, and commercial launch management across the region.</p>
-                        <div class="mt-4 flex items-center text-caribtealt text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
-                            Select Model &rarr;
+                    <div class="p-8">
+                        <p class="text-sm text-gray-500 leading-relaxed font-medium mb-6">End-to-end strategy, regulatory setup, and commercial launch management.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold text-deepslate uppercase tracking-widest bg-gray-50 px-3 py-1 rounded-full border border-gray-100">Starts at $10k</span>
+                            <div class="text-caribtealt group-hover:translate-x-2 transition-transform">&rarr;</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="engagement-card cursor-pointer bg-white rounded-[2rem] border border-gray-100 shadow-sm hover:border-caribtealt hover:shadow-2xl transition-all relative group overflow-hidden" data-model="Network Optimization">
+                <div onclick="openForm('Distributor Optimization')" class="engagement-card cursor-pointer bg-white rounded-[2.5rem] border border-gray-100 shadow-sm hover:border-caribtealt hover:shadow-2xl transition-all relative group overflow-hidden" data-model="Distributor Optimization">
                     <div class="h-56 overflow-hidden relative">
                         <img src="assets/retail.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-                        <div class="absolute bottom-4 left-6 text-white">
-                            <span class="text-[10px] font-black uppercase tracking-widest opacity-80">Phase II</span>
-                            <h4 class="font-black text-xl tracking-tight">Optimization</h4>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-70"></div>
+                        <div class="absolute bottom-6 left-8 text-white">
+                            <span class="text-[10px] font-black uppercase tracking-[0.2em] text-caribtealt mb-1 block">Growth</span>
+                            <h4 class="font-black text-2xl tracking-tight leading-none">Optimization</h4>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <p class="text-sm text-gray-500 leading-relaxed font-medium">Fixing fragmented networks and aligning local partners with global brand performance standards.</p>
-                        <div class="mt-4 flex items-center text-caribtealt text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
-                            Select Model &rarr;
+                    <div class="p-8">
+                        <p class="text-sm text-gray-500 leading-relaxed font-medium mb-6">Fixing fragmented networks and aligning partners with global performance standards.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold text-deepslate uppercase tracking-widest bg-gray-50 px-3 py-1 rounded-full border border-gray-100">Starts at $5k/mo</span>
+                            <div class="text-caribtealt group-hover:translate-x-2 transition-transform">&rarr;</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="engagement-card cursor-pointer bg-white rounded-[2rem] border border-gray-100 shadow-sm hover:border-caribtealt hover:shadow-2xl transition-all relative group overflow-hidden" data-model="Full Outsourcing">
+                <div onclick="openForm('Full Outsourcing')" class="engagement-card cursor-pointer bg-white rounded-[2.5rem] border border-gray-100 shadow-sm hover:border-caribtealt hover:shadow-2xl transition-all relative group overflow-hidden" data-model="Full Outsourcing">
                     <div class="h-56 overflow-hidden relative">
                         <img src="assets/consumers.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-                        <div class="absolute bottom-4 left-6 text-white">
-                            <span class="text-[10px] font-black uppercase tracking-widest opacity-80">Phase III</span>
-                            <h4 class="font-black text-xl tracking-tight">Full Management</h4>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-70"></div>
+                        <div class="absolute bottom-6 left-8 text-white">
+                            <span class="text-[10px] font-black uppercase tracking-[0.2em] text-caribtealt mb-1 block">Full Life-Cycle</span>
+                            <h4 class="font-black text-2xl tracking-tight leading-none">Management</h4>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <p class="text-sm text-gray-500 leading-relaxed font-medium">Acting as your regional export department—full accountability from compliance to sell-out.</p>
-                        <div class="mt-4 flex items-center text-caribtealt text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
-                            Select Model &rarr;
+                    <div class="p-8">
+                        <p class="text-sm text-gray-500 leading-relaxed font-medium mb-6">Acting as your regional export department—full accountability to sell-out.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold text-deepslate uppercase tracking-widest bg-gray-50 px-3 py-1 rounded-full border border-gray-100">Starts at $15k/mo</span>
+                            <div class="text-caribtealt group-hover:translate-x-2 transition-transform">&rarr;</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Interactive Form -->
+            <!-- Interactive Integrated Form -->
             <div id="form-container" class="bg-white p-8 md:p-16 rounded-[3rem] shadow-2xl border border-gray-50 max-w-3xl mx-auto transition-all duration-500 opacity-0 translate-y-8 hidden">
-                <h3 id="form-headline" class="text-2xl md:text-3xl font-black tracking-tight mb-8 text-center uppercase tracking-tighter">Initiate Growth Plan</h3>
+                <div class="text-center mb-10">
+                    <h3 id="form-headline" class="text-2xl md:text-4xl font-black tracking-tighter mb-4 uppercase">Initiate Growth Plan</h3>
+                    
+                    <!-- Fancier Objective Selector -->
+                    <div class="flex flex-wrap justify-center gap-2 mt-6">
+                        <button type="button" onclick="selectModel('First-Time Entry')" class="objective-pill px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest border border-gray-100 bg-offwhite hover:border-caribtealt transition-all" data-value="First-Time Entry">Market Entry</button>
+                        <button type="button" onclick="selectModel('Distributor Optimization')" class="objective-pill px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest border border-gray-100 bg-offwhite hover:border-caribtealt transition-all" data-value="Distributor Optimization">Optimization</button>
+                        <button type="button" onclick="selectModel('Full Outsourcing')" class="objective-pill px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest border border-gray-100 bg-offwhite hover:border-caribtealt transition-all" data-value="Full Outsourcing">Full Mgmt</button>
+                        <button type="button" onclick="selectModel('General Inquiry')" class="objective-pill px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest border border-gray-100 bg-offwhite hover:border-caribtealt transition-all" data-value="General Inquiry">Other</button>
+                    </div>
+                </div>
+
                 <form id="growth-form" class="space-y-4 md:space-y-6">
                     <input type="hidden" id="selected-objective" name="objective" value="">
                     <input type="hidden" id="form-subject" name="_subject" value="New MARC49 Growth Request">
+                    
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                         <input type="text" required name="name" placeholder="Full Name" class="w-full bg-offwhite border border-gray-100 px-6 py-4 rounded-2xl focus:border-caribtealt transition-all font-medium">
                         <input type="email" required name="email" placeholder="Work Email" class="w-full bg-offwhite border border-gray-100 px-6 py-4 rounded-2xl focus:border-caribtealt transition-all font-medium">
@@ -192,17 +207,19 @@
                         <input type="text" required name="title" placeholder="Your Title" class="w-full bg-offwhite border border-gray-100 px-6 py-4 rounded-2xl focus:border-caribtealt transition-all font-medium">
                     </div>
                     <textarea name="footprint" rows="3" placeholder="Describe your current LATAM presence..." class="w-full bg-offwhite border border-gray-100 px-6 py-4 rounded-2xl focus:border-caribtealt transition-all resize-none font-medium"></textarea>
+                    
                     <button type="submit" id="submit-btn" class="w-full bg-caribtealt text-white font-black py-5 rounded-2xl hover:bg-opacity-90 transition-all hover:shadow-lg active:scale-[0.98] flex items-center justify-center gap-3 text-lg uppercase tracking-widest">
                         <span id="btn-text">Submit Request</span>
                         <div id="loader" class="hidden w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
                     </button>
                 </form>
+
                 <div id="success-message" class="hidden text-center py-8 space-y-4">
                     <div class="w-16 h-16 bg-caribtealt text-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                     </div>
-                    <h3 class="text-2xl font-black tracking-tight uppercase tracking-tighter">Request Received</h3>
-                    <p class="text-gray-500 text-sm max-w-sm mx-auto font-medium">A growth strategist will review your portfolio and contact you within 24 hours.</p>
+                    <h3 class="text-2xl font-black tracking-tight uppercase tracking-tighter text-deepslate">Request Received</h3>
+                    <p class="text-gray-500 text-sm max-w-sm mx-auto font-medium">Roger Artinoff will review your portfolio and contact you within 24 hours.</p>
                 </div>
             </div>
         </section>
@@ -223,43 +240,53 @@
     </main>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const cards = document.querySelectorAll('.engagement-card');
-            const formContainer = document.getElementById('form-container');
-            const formHeadline = document.getElementById('form-headline');
-            const selectedObjectiveField = document.getElementById('selected-objective');
-            const formSubjectField = document.getElementById('form-subject');
-            const growthForm = document.getElementById('growth-form');
-            const submitBtn = document.getElementById('submit-btn');
-            const btnText = document.getElementById('btn-text');
-            const loader = document.getElementById('loader');
-            const successMessage = document.getElementById('success-message');
+        const formContainer = document.getElementById('form-container');
+        const formHeadline = document.getElementById('form-headline');
+        const selectedObjectiveField = document.getElementById('selected-objective');
+        const formSubjectField = document.getElementById('form-subject');
+        const growthForm = document.getElementById('growth-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const btnText = document.getElementById('btn-text');
+        const loader = document.getElementById('loader');
+        const successMessage = document.getElementById('success-message');
 
-            cards.forEach(card => {
-                card.addEventListener('click', () => {
-                    cards.forEach(c => {
-                        c.classList.remove('border-caribtealt', 'shadow-2xl', '-translate-y-2');
-                        c.querySelector('.check-icon')?.classList.add('opacity-0', 'scale-50');
-                    });
-                    card.classList.add('border-caribtealt', 'shadow-2xl', '-translate-y-2');
-                    card.querySelector('.check-icon')?.classList.remove('opacity-0', 'scale-50');
-                    const model = card.dataset.model;
-                    selectedObjectiveField.value = model;
-                    formSubjectField.value = `MARC49 Lead: ${model}`;
-                    formHeadline.innerText = `${model}`;
-                    formContainer.classList.remove('hidden', 'opacity-0', 'translate-y-8');
-                    setTimeout(() => formContainer.classList.add('flex', 'flex-col', 'opacity-100', 'translate-y-0'), 10);
-                    formContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                });
+        function selectModel(model) {
+            // Update fields
+            selectedObjectiveField.value = model;
+            formSubjectField.value = `MARC49 Lead: ${model}`;
+            formHeadline.innerText = model === 'General Inquiry' ? 'Initiate Growth' : model;
+
+            // Highlight pills
+            document.querySelectorAll('.objective-pill').forEach(pill => {
+                if (pill.dataset.value === model) {
+                    pill.classList.add('bg-caribtealt', 'text-white', 'border-caribtealt');
+                    pill.classList.remove('bg-offwhite', 'text-gray-400');
+                } else {
+                    pill.classList.remove('bg-caribtealt', 'text-white', 'border-caribtealt');
+                    pill.classList.add('bg-offwhite');
+                }
             });
+        }
 
+        function openForm(model) {
+            formContainer.classList.remove('hidden', 'opacity-0', 'translate-y-8');
+            setTimeout(() => {
+                formContainer.classList.add('flex', 'flex-col', 'opacity-100', 'translate-y-0');
+                selectModel(model);
+                formContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 10);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
             growthForm.addEventListener('submit', async (e) => {
                 e.preventDefault();
                 submitBtn.disabled = true;
                 btnText.innerText = 'Processing...';
                 loader.classList.remove('hidden');
+                
                 const formData = new FormData(growthForm);
                 const data = Object.fromEntries(formData.entries());
+                
                 try {
                     const response = await fetch('https://formspree.io/f/rog@marc49.ca', {
                         method: 'POST',
@@ -268,6 +295,7 @@
                     });
                     if (response.ok) {
                         growthForm.classList.add('opacity-0', 'hidden');
+                        document.querySelector('.objective-pill').parentElement.classList.add('hidden');
                         formHeadline.classList.add('hidden');
                         successMessage.classList.remove('hidden');
                         formContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
