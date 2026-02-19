@@ -49,6 +49,9 @@
             outline: none;
             border-color: #0D9488;
         }
+        .img-mask {
+            mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+        }
     </style>
 </head>
 <body class="font-sans antialiased text-deepslate">
@@ -105,26 +108,38 @@
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <!-- Cards -->
-                    <div class="bg-white p-8 rounded-2xl border border-gray-200 hover:border-caribtealt hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                        <span class="text-caribtealt text-3xl font-bold block mb-4">650M+</span>
-                        <h3 class="font-bold text-lg mb-2">Consumers</h3>
-                        <p class="text-sm text-gray-500 leading-relaxed">Sustained demand for high-quality, international CPG products.</p>
+                    <!-- Cards with Local Images -->
+                    <div class="group relative bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-caribtealt hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+                        <img src="assets/consumers.jpg" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity">
+                        <div class="relative p-8 z-10">
+                            <span class="text-caribtealt text-3xl font-bold block mb-4">650M+</span>
+                            <h3 class="font-bold text-lg mb-2">Consumers</h3>
+                            <p class="text-sm text-gray-500 leading-relaxed">Sustained demand for high-quality, international CPG products.</p>
+                        </div>
                     </div>
-                    <div class="bg-white p-8 rounded-2xl border border-gray-200 hover:border-caribtealt hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                        <span class="text-caribtealt text-3xl font-bold block mb-4">Retail</span>
-                        <h3 class="font-bold text-lg mb-2">Import Dependent</h3>
-                        <p class="text-sm text-gray-500 leading-relaxed">Highly fragmented networks requiring specialized oversight.</p>
+                    <div class="group relative bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-caribtealt hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+                        <img src="assets/retail.jpg" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity">
+                        <div class="relative p-8 z-10">
+                            <span class="text-caribtealt text-3xl font-bold block mb-4">Retail</span>
+                            <h3 class="font-bold text-lg mb-2">Import Dependent</h3>
+                            <p class="text-sm text-gray-500 leading-relaxed">Highly fragmented networks requiring specialized oversight.</p>
+                        </div>
                     </div>
-                    <div class="bg-white p-8 rounded-2xl border border-gray-200 hover:border-caribtealt hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                        <span class="text-caribtealt text-3xl font-bold block mb-4">Growth</span>
-                        <h3 class="font-bold text-lg mb-2">Tourism-Driven</h3>
-                        <p class="text-sm text-gray-500 leading-relaxed">Consistent consumption peaks across key tourist corridors.</p>
+                    <div class="group relative bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-caribtealt hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+                        <img src="assets/strategy.jpg" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity">
+                        <div class="relative p-8 z-10">
+                            <span class="text-caribtealt text-3xl font-bold block mb-4">Growth</span>
+                            <h3 class="font-bold text-lg mb-2">Tourism-Driven</h3>
+                            <p class="text-sm text-gray-500 leading-relaxed">Consistent consumption peaks across key tourist corridors.</p>
+                        </div>
                     </div>
-                    <div class="bg-white p-8 rounded-2xl border border-gray-200 hover:border-caribtealt hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                        <span class="text-caribtealt text-3xl font-bold block mb-4">Shift</span>
-                        <h3 class="font-bold text-lg mb-2">Supply Chain</h3>
-                        <p class="text-sm text-gray-500 leading-relaxed">Strategic diversification away from traditional US reliance.</p>
+                    <div class="group relative bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-caribtealt hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+                        <img src="assets/logistics.jpg" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity">
+                        <div class="relative p-8 z-10">
+                            <span class="text-caribtealt text-3xl font-bold block mb-4">Shift</span>
+                            <h3 class="font-bold text-lg mb-2">Supply Chain</h3>
+                            <p class="text-sm text-gray-500 leading-relaxed">Strategic diversification away from traditional US reliance.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -256,7 +271,13 @@
             <div class="max-w-7xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center mb-32">
                     <div class="flex flex-col md:flex-row items-center gap-10">
-                        <img src="https://via.placeholder.com/150" alt="Founder" class="w-40 h-40 rounded-full grayscale border-4 border-white/10">
+                        <!-- Premium Founder Placeholder -->
+                        <div class="relative">
+                            <div class="w-40 h-40 rounded-full bg-gradient-to-br from-caribtealt to-deepslate flex items-center justify-center text-4xl font-black text-white border-4 border-white/10 overflow-hidden">
+                                RP
+                                <div class="absolute inset-0 bg-black/20"></div>
+                            </div>
+                        </div>
                         <div class="text-center md:text-left">
                             <h3 class="text-3xl font-bold mb-4">20+ Years Experience</h3>
                             <p class="text-gray-400 leading-relaxed max-w-md">Our leadership brings two decades of hands-on experience in high-stakes LATAM market execution for the world's most demanding CPG giants.</p>
