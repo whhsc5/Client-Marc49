@@ -35,8 +35,9 @@
         }
     </script>
     <style>
+        /* Improved filter for SVG icons to remove "shaded" artifacts */
         .capability-icon {
-            filter: invert(11%) sepia(91%) saturate(6453%) hue-rotate(359deg) brightness(94%) contrast(113%);
+            filter: brightness(0) saturate(100%) invert(11%) sepia(91%) saturate(6453%) hue-rotate(359deg) brightness(94%) contrast(113%);
         }
         #mobile-menu {
             transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -49,14 +50,14 @@
     <header class="fixed top-0 left-0 right-0 z-50 glass border-b border-gray-100 transition-all duration-300 h-16 md:h-20">
         <nav class="max-w-7xl mx-auto px-4 md:px-6 h-full flex items-center justify-between">
             <div class="flex items-center h-full">
-                <!-- New Header Logo with Blend Fix -->
-                <img src="assets/Logo - Gemini_Generated_Image_mi5i7nmi5i7nmi5i.png" alt="MARC49 Logo" class="h-10 md:h-14 w-auto object-contain mix-blend-multiply">
+                <!-- Using the new transparent PNG logo -->
+                <img src="assets/MARC49 Logo vf - transparent.png" alt="MARC49 Logo" class="h-8 md:h-12 w-auto object-contain">
             </div>
             
-            <!-- Desktop Navigation (5 Buttons) -->
+            <!-- Desktop Navigation -->
             <div class="hidden lg:flex items-center gap-8 text-xs font-bold uppercase tracking-widest">
                 <a href="#opportunity" class="hover:text-primaryred transition-colors">Why Export</a>
-                <a href="#experience" class="hover:text-primaryred transition-colors">CEO</a>
+                <a href="#experience" class="hover:text-caribtealt transition-colors">CEO</a>
                 <a href="#capabilities" class="hover:text-primaryred transition-colors">Capabilities</a>
                 <a href="#solutions" class="hover:text-primaryred transition-colors">Solutions</a>
                 <button onclick="openForm('General Inquiry')" class="bg-primaryred text-white px-6 py-2.5 rounded-full hover:bg-opacity-90 transition-all hover:scale-105 shadow-md shadow-primaryred/10 font-black">Start Growth</button>
@@ -79,7 +80,7 @@
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
         </div>
-        <div class="flex flex-col space-y-6 text-2xl font-black tracking-tighter uppercase">
+        <div class="flex flex-col space-y-6 text-2xl font-black tracking-tighter uppercase text-deepslate">
             <a href="#opportunity" onclick="toggleMenu()" class="hover:text-primaryred">Why Export</a>
             <a href="#experience" onclick="toggleMenu()" class="hover:text-primaryred">CEO</a>
             <a href="#capabilities" onclick="toggleMenu()" class="hover:text-primaryred">Capabilities</a>
@@ -113,16 +114,16 @@
             <h2 class="text-3xl md:text-5xl font-black tracking-tight mb-12 uppercase italic text-primaryred">The Market opportunity</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                 <div class="p-8 bg-white rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
-                    <span class="block text-2xl md:text-3xl font-black text-deepslate tracking-tighter uppercase leading-tight">650m+<br>Consumers</span>
+                    <span class="block text-2xl md:text-3xl font-black text-deepslate tracking-tighter uppercase leading-tight text-deepslate">650m+<br>Consumers</span>
                 </div>
                 <div class="p-8 bg-white rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
-                    <span class="block text-2xl md:text-3xl font-black text-deepslate tracking-tighter uppercase leading-tight">Import dependent<br>economies</span>
+                    <span class="block text-2xl md:text-3xl font-black text-deepslate tracking-tighter uppercase leading-tight text-deepslate">Import dependent<br>economies</span>
                 </div>
                 <div class="p-8 bg-white rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
-                    <span class="block text-2xl md:text-3xl font-black text-deepslate tracking-tighter uppercase leading-tight">Tourism drives +<br>consumption</span>
+                    <span class="block text-2xl md:text-3xl font-black text-deepslate tracking-tighter uppercase leading-tight text-deepslate">Tourism drives +<br>consumption</span>
                 </div>
                 <div class="p-8 bg-white rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
-                    <span class="block text-2xl md:text-3xl font-black text-deepslate tracking-tighter uppercase leading-tight">Diversifying<br>supply chains</span>
+                    <span class="block text-2xl md:text-3xl font-black text-deepslate tracking-tighter uppercase leading-tight text-deepslate">Diversifying<br>supply chains</span>
                 </div>
             </div>
         </section>
@@ -134,7 +135,7 @@
                 <h2 class="text-3xl md:text-5xl font-black tracking-tight mb-2 text-deepslate uppercase">Roger Artinoff</h2>
                 <p class="text-primaryred font-bold uppercase tracking-widest text-xs mb-8">CEO & Founder, MARC49</p>
                 <div class="max-w-3xl mx-auto space-y-6 text-gray-600 leading-relaxed text-base md:text-xl px-4">
-                    <p class="font-medium">
+                    <p class="font-medium text-deepslate">
                         A former P&L owner for business units exceeding $100M+, he specializes in go-to-market transformation and building high performing teams for CPG firms of all sizes
                     </p>
                 </div>
@@ -155,7 +156,7 @@
                     </div>
                     <div>
                         <h3 class="font-black text-lg md:text-xl mb-2 uppercase tracking-tight text-deepslate">Market Access & Strategy</h3>
-                        <p class="text-gray-500 text-sm md:text-base leading-relaxed">Prioritize markets, define rollout sequencing</p>
+                        <p class="text-gray-500 text-sm md:text-base leading-relaxed font-medium">Prioritize markets, define rollout sequencing</p>
                     </div>
                 </div>
                 <div class="flex items-start gap-6">
@@ -164,7 +165,7 @@
                     </div>
                     <div>
                         <h3 class="font-black text-lg md:text-xl mb-2 uppercase tracking-tight text-deepslate">Partner & Distributor Management</h3>
-                        <p class="text-gray-500 text-sm md:text-base leading-relaxed">Identify, onboard, and manage regional partners with accountability</p>
+                        <p class="text-gray-500 text-sm md:text-base leading-relaxed font-medium">Identify, onboard, and manage regional partners with accountability</p>
                     </div>
                 </div>
                 <div class="flex items-start gap-6">
@@ -173,7 +174,7 @@
                     </div>
                     <div>
                         <h3 class="font-black text-lg md:text-xl mb-2 uppercase tracking-tight text-deepslate">Compliance & Logistics</h3>
-                        <p class="text-gray-500 text-sm md:text-base leading-relaxed">Regulatory assessment, import documentation, freight coordination</p>
+                        <p class="text-gray-500 text-sm md:text-base leading-relaxed font-medium">Regulatory assessment, import documentation, freight coordination</p>
                     </div>
                 </div>
                 <div class="flex items-start gap-6">
@@ -182,7 +183,7 @@
                     </div>
                     <div>
                         <h3 class="font-black text-lg md:text-xl mb-2 uppercase tracking-tight text-deepslate">Commercial Execution</h3>
-                        <p class="text-gray-500 text-sm md:text-base leading-relaxed">Trade marketing, in-market activation, demand forecasting</p>
+                        <p class="text-gray-500 text-sm md:text-base leading-relaxed font-medium">Trade marketing, in-market activation, demand forecasting</p>
                     </div>
                 </div>
             </div>
@@ -242,7 +243,7 @@
             <!-- Interactive Integrated Form -->
             <div id="form-container" class="bg-white p-8 md:p-16 rounded-[3rem] shadow-2xl border border-gray-50 max-w-3xl mx-auto transition-all duration-500 opacity-0 translate-y-8 hidden">
                 <div class="text-center mb-10">
-                    <h3 id="form-headline" class="text-2xl md:text-4xl font-black tracking-tighter mb-4 uppercase text-deepslate">Initiate Growth Plan</h3>
+                    <h3 id="form-headline" class="text-2xl md:text-4xl font-black tracking-tighter mb-4 uppercase text-deepslate text-center">Initiate Growth Plan</h3>
                     <div class="flex flex-wrap justify-center gap-2 mt-6">
                         <button type="button" onclick="selectModel('Market Entry')" class="objective-pill px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest border border-gray-100 bg-offwhite hover:border-primaryred transition-all" data-value="Market Entry">Market Entry</button>
                         <button type="button" onclick="selectModel('Go-to-market optimization')" class="objective-pill px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest border border-gray-100 bg-offwhite hover:border-primaryred transition-all" data-value="Go-to-market optimization">Optimization</button>
@@ -254,14 +255,14 @@
                     <input type="hidden" id="selected-objective" name="objective" value="">
                     <input type="hidden" id="form-subject" name="_subject" value="New MARC49 Growth Request">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                        <input type="text" required name="name" placeholder="Full Name" class="w-full bg-offwhite border border-gray-100 px-6 py-4 rounded-2xl focus:border-primaryred transition-all font-medium">
-                        <input type="email" required name="email" placeholder="Work Email" class="w-full bg-offwhite border border-gray-100 px-6 py-4 rounded-2xl focus:border-primaryred transition-all font-medium">
+                        <input type="text" required name="name" placeholder="Full Name" class="w-full bg-offwhite border border-gray-100 px-6 py-4 rounded-2xl focus:border-primaryred transition-all font-medium text-deepslate">
+                        <input type="email" required name="email" placeholder="Work Email" class="w-full bg-offwhite border border-gray-100 px-6 py-4 rounded-2xl focus:border-primaryred transition-all font-medium text-deepslate">
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                        <input type="text" required name="company" placeholder="Company Name" class="w-full bg-offwhite border border-gray-100 px-6 py-4 rounded-2xl focus:border-primaryred transition-all font-medium">
-                        <input type="text" required name="title" placeholder="Your Title" class="w-full bg-offwhite border border-gray-100 px-6 py-4 rounded-2xl focus:border-primaryred transition-all font-medium">
+                        <input type="text" required name="company" placeholder="Company Name" class="w-full bg-offwhite border border-gray-100 px-6 py-4 rounded-2xl focus:border-primaryred transition-all font-medium text-deepslate">
+                        <input type="text" required name="title" placeholder="Your Title" class="w-full bg-offwhite border border-gray-100 px-6 py-4 rounded-2xl focus:border-primaryred transition-all font-medium text-deepslate">
                     </div>
-                    <textarea name="footprint" rows="3" placeholder="Describe your current LATAM presence..." class="w-full bg-offwhite border border-gray-100 px-6 py-4 rounded-2xl focus:border-primaryred transition-all resize-none font-medium"></textarea>
+                    <textarea name="footprint" rows="3" placeholder="Describe your current LATAM presence..." class="w-full bg-offwhite border border-gray-100 px-6 py-4 rounded-2xl focus:border-primaryred transition-all resize-none font-medium text-deepslate"></textarea>
                     <div class="flex justify-center pt-2">
                         <button type="submit" id="submit-btn" class="w-full md:w-auto min-w-[180px] bg-primaryred text-white font-black py-4 px-10 rounded-full hover:bg-opacity-90 transition-all hover:shadow-lg active:scale-[0.98] flex items-center justify-center gap-3 text-xs md:text-sm uppercase tracking-widest">
                             <span id="btn-text">Submit Request</span>
@@ -283,8 +284,9 @@
         <footer class="bg-clientgold text-white py-12 px-6">
             <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] font-bold uppercase tracking-widest text-center">
                 <div class="flex items-center gap-4">
-                    <img src="assets/Logo - Gemini_Generated_Image_mi5i7nmi5i7nmi5i.png" alt="MARC49 Logo" class="h-10 w-auto object-contain mix-blend-multiply opacity-90">
-                    <p class="text-deepslate/60">&copy; 2026. All rights reserved.</p>
+                    <!-- Using the new transparent PNG logo in footer too -->
+                    <img src="assets/MARC49 Logo vf - transparent.png" alt="MARC49 Logo" class="h-10 w-auto object-contain brightness-0 invert opacity-90">
+                    <p class="text-white/70">&copy; 2026. All rights reserved.</p>
                 </div>
                 <div class="flex gap-10">
                     <a href="https://www.linkedin.com/in/roger-artinoff-0331655/" target="_blank" class="hover:text-deepslate transition-colors">LinkedIn</a>
