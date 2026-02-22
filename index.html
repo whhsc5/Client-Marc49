@@ -114,27 +114,28 @@
 
         <!-- 2. The Market Opportunity Section -->
         <section id="opportunity" class="max-w-7xl mx-auto px-6 py-16 md:py-24 border-t border-gray-100 text-center">
-            <h2 class="text-3xl md:text-5xl font-black tracking-tight mb-12 uppercase italic text-primaryred">The Market opportunity</h2>
+            <h2 class="text-3xl md:text-5xl font-black tracking-tight mb-12 uppercase italic text-primaryred text-center">The Market opportunity</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 items-stretch">
+                <!-- Softened Weight for Stat Cards -->
                 <div class="p-8 bg-white rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all stat-card">
-                    <span class="block text-2xl md:text-3xl font-black text-deepslate tracking-tighter uppercase leading-tight">650m+<br>Consumers</span>
+                    <span class="block text-2xl md:text-3xl font-medium text-deepslate tracking-tighter uppercase leading-tight">650m+<br>Consumers</span>
                 </div>
                 <div class="p-8 bg-white rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all stat-card">
-                    <span class="block text-2xl md:text-3xl font-black text-deepslate tracking-tighter uppercase leading-tight">Import dependent<br>economies</span>
+                    <span class="block text-2xl md:text-3xl font-medium text-deepslate tracking-tighter uppercase leading-tight">Import dependent<br>economies</span>
                 </div>
                 <div class="p-8 bg-white rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all stat-card">
-                    <span class="block text-2xl md:text-3xl font-black text-deepslate tracking-tighter uppercase leading-tight">Tourism drives +<br>consumption</span>
+                    <span class="block text-2xl md:text-3xl font-medium text-deepslate tracking-tighter uppercase leading-tight">Tourism drives +<br>consumption</span>
                 </div>
                 <div class="p-8 bg-white rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all stat-card">
-                    <span class="block text-2xl md:text-3xl font-black text-deepslate tracking-tighter uppercase leading-tight">Diversifying<br>supply chains</span>
+                    <span class="block text-2xl md:text-3xl font-medium text-deepslate tracking-tighter uppercase leading-tight">Diversifying<br>supply chains</span>
                 </div>
             </div>
         </section>
 
         <!-- 3. CEO Section -->
-        <section id="experience" class="max-w-5xl mx-auto px-6 py-12 md:py-20 text-center bg-white rounded-[3rem] shadow-sm border border-gray-50 mb-16">
-            <div class="mb-10 px-4">
-                <img src="assets/Roger.png" alt="Roger Artinoff" class="w-48 h-48 md:w-64 md:h-64 rounded-[2.5rem] object-cover border-8 border-offwhite shadow-2xl mx-auto mb-8 transform -rotate-1 hover:rotate-0 transition-all duration-500">
+        <section id="experience" class="max-w-5xl mx-auto px-6 py-12 md:py-20 text-center bg-white rounded-[3rem] shadow-sm border border-gray-50 mb-16 text-center">
+            <div class="mb-10 px-4 flex flex-col items-center">
+                <img src="assets/Roger.png" alt="Roger Artinoff" class="w-48 h-48 md:w-64 md:h-64 rounded-[2.5rem] object-cover border-8 border-offwhite shadow-2xl mb-8 transform -rotate-1 hover:rotate-0 transition-all duration-500">
                 <h2 class="text-3xl md:text-5xl font-black tracking-tight mb-2 text-deepslate uppercase text-center">Roger Artinoff</h2>
                 <p class="text-primaryred font-bold uppercase tracking-widest text-xs mb-8 text-center">CEO & Founder, MARC49</p>
                 <div class="max-w-3xl mx-auto space-y-6 text-gray-600 leading-relaxed text-base md:text-xl px-4 text-center">
@@ -148,8 +149,8 @@
         <!-- 4. What We Do (Capabilities) -->
         <section id="capabilities" class="max-w-6xl mx-auto px-6 py-20 md:py-32">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-6xl font-black tracking-tight mb-4 uppercase text-deepslate">What We Do</h2>
-                <p class="text-primaryred font-black uppercase tracking-[0.2em] text-xs md:text-sm">Faster Entry, Lower Risk, Stronger Sell-Through</p>
+                <h2 class="text-3xl md:text-6xl font-black tracking-tight mb-4 uppercase text-deepslate text-center">What We Do</h2>
+                <p class="text-primaryred font-black uppercase tracking-[0.2em] text-xs md:text-sm text-center">Faster Entry, Lower Risk, Stronger Sell-Through</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
@@ -199,55 +200,56 @@
         <!-- 5. Engagement Models -->
         <section id="solutions" class="max-w-6xl mx-auto px-6 py-16 md:py-24 border-t border-gray-100 text-center">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-5xl font-black tracking-tight mb-4 uppercase text-deepslate">Engagement Models</h2>
-                <p class="text-gray-500 max-w-xl mx-auto text-sm md:text-base font-medium">Designed for flexibility and scale</p>
+                <h2 class="text-3xl md:text-5xl font-black tracking-tight mb-4 uppercase text-deepslate text-center">Engagement Models</h2>
+                <p class="text-gray-500 max-w-xl mx-auto text-sm md:text-base font-medium text-center">Designed for flexibility and scale</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20" id="engagement-selector text-left">
-                <div onclick="openForm('Market Entry')" class="engagement-card cursor-pointer bg-white rounded-[2.5rem] border border-gray-100 shadow-sm hover:border-primaryred hover:shadow-2xl transition-all relative group overflow-hidden flex flex-col h-full" data-model="Market Entry">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20" id="engagement-selector">
+                <!-- Centered Engagement Cards -->
+                <div onclick="openForm('Market Entry')" class="engagement-card cursor-pointer bg-white rounded-[2.5rem] border border-gray-100 shadow-sm hover:border-primaryred hover:shadow-2xl transition-all relative group overflow-hidden flex flex-col h-full text-center" data-model="Market Entry">
                     <div class="h-56 overflow-hidden relative shrink-0">
                         <img src="assets/strategy.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-70"></div>
-                        <div class="absolute bottom-6 left-8 text-white text-left">
-                            <h4 class="font-black text-2xl tracking-tight leading-none uppercase">Market Entry</h4>
+                        <div class="absolute bottom-6 left-0 right-0 text-white text-center">
+                            <h4 class="font-black text-2xl tracking-tight leading-none uppercase px-4">Market Entry</h4>
                         </div>
                     </div>
-                    <div class="p-8 flex flex-col flex-grow text-center">
-                        <p class="text-sm text-gray-500 leading-relaxed font-medium mb-8">End-to-end strategy, regulatory setup, and commercial launch management across the region.</p>
+                    <div class="p-8 flex flex-col flex-grow items-center">
+                        <p class="text-sm text-gray-600 leading-relaxed font-medium mb-8">End-to-end strategy, regulatory setup, and commercial launch management across the region.</p>
                         <div class="mt-auto flex items-center justify-center text-primaryred group-hover:translate-x-2 transition-transform font-black uppercase text-xs tracking-widest">Start Plan &rarr;</div>
                     </div>
                 </div>
 
-                <div onclick="openForm('Go-to-market optimization')" class="engagement-card cursor-pointer bg-white rounded-[2.5rem] border border-gray-100 shadow-sm hover:border-primaryred hover:shadow-2xl transition-all relative group overflow-hidden flex flex-col h-full" data-model="Go-to-market optimization">
+                <div onclick="openForm('Go-to-market optimization')" class="engagement-card cursor-pointer bg-white rounded-[2.5rem] border border-gray-100 shadow-sm hover:border-primaryred hover:shadow-2xl transition-all relative group overflow-hidden flex flex-col h-full text-center" data-model="Go-to-market optimization">
                     <div class="h-56 overflow-hidden relative shrink-0">
                         <img src="assets/model_optimization.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-70"></div>
-                        <div class="absolute bottom-6 left-8 text-white text-left text-left">
-                            <h4 class="font-black text-2xl tracking-tight leading-none uppercase text-white">GTM Optimization</h4>
+                        <div class="absolute bottom-6 left-0 right-0 text-white text-center">
+                            <h4 class="font-black text-2xl tracking-tight leading-none uppercase px-4">GTM Optimization</h4>
                         </div>
                     </div>
-                    <div class="p-8 flex flex-col flex-grow text-center">
-                        <p class="text-sm text-gray-500 leading-relaxed font-medium mb-8">Correct value chain and distributor network inefficiencies.</p>
+                    <div class="p-8 flex flex-col flex-grow items-center">
+                        <p class="text-sm text-gray-600 leading-relaxed font-medium mb-8">Correct value chain and distributor network inefficiencies.</p>
                         <div class="mt-auto flex items-center justify-center text-primaryred group-hover:translate-x-2 transition-transform font-black uppercase text-xs tracking-widest">Start Plan &rarr;</div>
                     </div>
                 </div>
 
-                <div onclick="openForm('Full Management')" class="engagement-card cursor-pointer bg-white rounded-[2.5rem] border border-gray-100 shadow-sm hover:border-primaryred hover:shadow-2xl transition-all relative group overflow-hidden flex flex-col h-full" data-model="Full Management">
+                <div onclick="openForm('Full Management')" class="engagement-card cursor-pointer bg-white rounded-[2.5rem] border border-gray-100 shadow-sm hover:border-primaryred hover:shadow-2xl transition-all relative group overflow-hidden flex flex-col h-full text-center" data-model="Full Management">
                     <div class="h-56 overflow-hidden relative shrink-0">
                         <img src="assets/model_full_mgmt.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-70"></div>
-                        <div class="absolute bottom-6 left-8 text-white text-left text-left">
-                            <h4 class="font-black text-2xl tracking-tight leading-none uppercase text-white">Full Management</h4>
+                        <div class="absolute bottom-6 left-0 right-0 text-white text-center">
+                            <h4 class="font-black text-2xl tracking-tight leading-none uppercase px-4">Full Management</h4>
                         </div>
                     </div>
-                    <div class="p-8 flex flex-col flex-grow text-center">
-                        <p class="text-sm text-gray-500 leading-relaxed font-medium mb-8">Acting as your regional export department—full accountability to sell-out.</p>
+                    <div class="p-8 flex flex-col flex-grow items-center">
+                        <p class="text-sm text-gray-600 leading-relaxed font-medium mb-8">Acting as your regional export department—full accountability to sell-out.</p>
                         <div class="mt-auto flex items-center justify-center text-primaryred group-hover:translate-x-2 transition-transform font-black uppercase text-xs tracking-widest">Start Plan &rarr;</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Interactive Form -->
+            <!-- Interactive Integrated Form -->
             <div id="form-container" class="bg-white p-8 md:p-16 rounded-[3rem] shadow-2xl border border-gray-50 max-w-3xl mx-auto transition-all duration-500 opacity-0 translate-y-8 hidden">
                 <div class="text-center mb-10">
                     <h3 id="form-headline" class="text-2xl md:text-4xl font-black tracking-tighter mb-4 uppercase text-deepslate text-center">Initiate Growth Plan</h3>
