@@ -1,11 +1,3 @@
-# robots.txt for MARC49
-# Professional CPG Export Growth Consultancy
-
 User-agent: *
 Allow: /
-
-# Sitemap location
 Sitemap: https://marc49.ca/sitemap.xml
-
-# Crawl-delay for smaller bots
-Crawl-delay: 10
